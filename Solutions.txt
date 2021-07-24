@@ -1,0 +1,33 @@
+mkdir gitAssignment
+$ cd gitAssignment
+$ touch private.txt  public.txt  protected.txt
+$ git add .
+$ git commit -m "initial commit"
+$ git status
+$ git checkout -b Dev
+$ git add private.txt
+$ git commit -m "added the first file to the Dev branch"
+$ git log
+$ git checkout -b Test
+$ git add public.txt protected.txt
+$ git commit -m "added the two files to the Test branch"
+$ notepad private.txt
+$ git diff 
+$ git add private.txt
+$ git diff --cached
+$ git commit -m "changed the contents of private.txt"
+$ git checkout master
+$ git merge --all
+$ git remote add origin https://github.com/avdhoot0303/gitAssignment.git
+$ git push -u origin master
+$ cd ..
+$ mkdir gitClone
+$cd gitClone
+$ git init
+$ git clone https://github.com/avdhoot0303/gitAssignment.git
+$ cd gitAssignment/
+$ notepad Solutions.txt
+$ git status
+$ git add Solutions.txt
+$ git remote add origin https://github.com/avdhoot0303/gitAssignment.git
+$ git push -u origin master
